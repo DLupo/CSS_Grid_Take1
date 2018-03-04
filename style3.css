@@ -1,0 +1,25 @@
+
+
+.d1 { grid-area: header; }
+.d2 { grid-area: menu; }
+.d3 { grid-area: content; }
+.d4 { grid-area: right; }
+.d5 { grid-area: footer; }
+
+.container {
+  display: grid;
+  grid-template-areas:
+  'header header header'
+  'menu content right'
+  'footer footer footer';
+  grid-gap: 15px;
+  background-color: orange;
+  padding: 15px;
+}
+
+.container > div {
+font-size: 28px;
+text-align: center;
+color: rgba(255, 255, 255, 0.8);
+background-color: rgba(255, 0, 0, 0.5);
+}
